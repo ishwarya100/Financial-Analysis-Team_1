@@ -105,6 +105,34 @@ Helps users easily search for stock ticker symbols using company names.
 - The user enters a company name.
 - The system searches a predefined database and returns matching stock tickers to improve usability for beginners.
 
+## Project Structure
+```
+ai-stock-analyzer/
+│
+├── app.py                       # Main Streamlit application entry point
+├── doc.pdf                      # Project documentation/specification
+├── README.md                    # Project overview and setup instructions
+│
+├── src/                         # Source code for modular components
+│   ├── __init__.py              # Makes src a Python package
+│   ├── data_loader.py           # Functions for fetching stock data via yFinance
+│   ├── indicators.py            # Logic for MA, RSI, and Bollinger Bands
+│   ├── predictor.py             # Linear Regression model training and prediction
+│   ├── lstm_model.py            # Deep learning LSTM model architecture and training
+│   ├── recommendation.py        # Trading signal logic (Buy/Sell/Hold)
+│   ├── news_sentiment.py        # NLP-based news fetching and sentiment analysis
+│   ├── watchlist.py             # CRUD operations for the user watchlist system
+│   ├── stock_screener.py        # Multi-stock scanning and filtering logic
+│   ├── portfolio_optimizer.py   # Mean-variance optimization algorithms
+│   ├── paper_trading.py         # Virtual cash and portfolio management
+│   ├── trading_simulator.py     # Backtesting strategies against historical data
+│   ├── market_dashboard.py      # Global market overview and gainer/loser logic
+│   ├── market_sentiment.py      # High-level bullish/bearish market gauges
+│   └── tickers.py               # Search utility for company-to-ticker mapping
+│
+└── requirements.txt             # List of Python dependencies
+```
+
 ## Installation
 #### 1. Clone the repository to your local machine:
    ```bash
@@ -124,7 +152,7 @@ venv\Scripts\activate
 ```
 #### 3. Install the required dependencies:
 ```
-pip install streamlit pandas plotly yfinance scikit-learn tensorflow
+pip install -r requirements.txt
 ```
 ## How to Run
 Ensure your virtual environment is activated.
@@ -132,3 +160,13 @@ Ensure your virtual environment is activated.
 streamlit run app.py
 ```
 Open your web browser and navigate to the local URL provided in your terminal (typically http://localhost:8501)
+
+-------------------------------------------------------------------------------------------------------------------
+### Note ❗
+**This application is for educational purposes only and should not be used for real investment decisions.**
+
+
+Developed by **Team Byte Storms**.
+
+
+*Thank you for exploring this project :)*
