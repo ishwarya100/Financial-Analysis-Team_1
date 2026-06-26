@@ -136,8 +136,8 @@ ai-stock-analyzer/
 ## Installation
 #### 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/ishwarya100/Financial-Analysis-Team_1.git)
-   cd your-repo-name
+   git clone https://github.com/ishwarya100/Financial-Analysis-Team_1.git
+   cd Financial-Analysis-Team_1
 ```
 #### 2. Create and activate a virtual environment (recommended):
 ##### On macOS and Linux
