@@ -4,7 +4,7 @@ numpy==1.26.4
 plotly==5.21.0
 yfinance==0.2.40
 scikit-learn==1.4.2
-tensorflow==2.10.0
+tensorflow==2.15.1
 streamlit-autorefresh==1.0.1
 feedparser==6.0.8
 textblob==0.17.1
